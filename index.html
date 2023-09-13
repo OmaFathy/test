@@ -1,0 +1,68 @@
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Exam</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/RegisterCSS/registersite.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Exam.styles.css" asp-append-version="true" />
+</head>
+<body>
+
+<div class="container">
+    <form asp-action="Saveadd" method="post" asp-controller="Register">
+      <img class="img_class" src="../Assets/Images/register_image.jpg" />
+
+
+        <div class="box1">
+            <input asp-for="Name" type="text" id="Input" name="Name" placeholder="اسمك رباعي بالعربية" required title="يرجى إدخال اسمك الرباعي بالعربية">
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="box2">
+            <input asp-for="Email" type="text" name="Email" id="Input" placeholder="الايميل الخاص بك" required title="يرجى إدخال عنوان بريد إلكتروني صحيح">
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="box3">
+            <input asp-for="Password" type="password" id="Input" placeholder="الباسورد" required title="يرجى إدخال الباسورد">
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+
+        <div class="box4">
+            <input asp-for="prep_no" type="text" id="Input" placeholder="رقم الصف" required title="يرجى إدخال رقم الصف بشكل صحيح">
+            <span asp-validation-for="prep_no" class="text-danger"></span>
+        </div>
+
+        <div class="box5">
+           
+            <input asp-for="section_no" type="text" id="Input" placeholder="رقم السكشن" required title="يرجي ادخال رقم السكشن بشكل صحيح">
+            <span asp-validation-for="section_no" class="text-danger"></span>
+        </div>
+
+        <div class="reg_black">التسجيل</div>
+
+        <div>
+            <button class="button_reg info" type="submit">التسجيل</button>
+        </div>
+    </form>
+</div>
+
+<footer class="border-top footer text-muted">
+    <div class="container">
+        &copy; 2023 - Exam - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    </div>
+</footer>
+
+       
+   
+   
+</body>
+</html>
