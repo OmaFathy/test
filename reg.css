@@ -1,0 +1,136 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: white;
+    margin: 0;
+}
+
+.reg_black {
+    left: 67px;
+    top: 117px;
+    position: absolute;
+    color: black;
+    font-size: 32px;
+    font-family: Inter;
+    font-weight: 700;
+    word-wrap: break-word
+}
+
+.img_class {
+    width: 1200px;
+    height: 668px;
+    left: 599px;
+    top: 136px;
+    position: absolute
+}
+
+.box1, .box2, .box3, .box4, .box5 {
+    width: 340px;
+    height: 59px;
+    position: absolute;
+    background: white;
+    border-radius: 10px;
+    border: 1px black solid;
+}
+
+.box1 {
+    left: 56px;
+    top: 232px;
+}
+
+.box2 {
+    left: 56px;
+    top: 340px;
+}
+
+.box3 {
+    left: 56px;
+    top: 448px;
+}
+
+.box4 {
+    left: 56px;
+    top: 557px;
+}
+
+.box5 {
+    left: 56px;
+    top: 663px;
+}
+
+#Input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+}
+
+.button_reg {
+    width: 270px;
+    height: 84px;
+    left: 85px;
+    top: 774px;
+    position: absolute;
+    border-radius: 100px;
+    border: 0.50px black solid;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.info {
+    background-color: #c97c70;
+}
+    /* Blue */
+    .info:hover {
+        background: #C97070;
+    }
+
+    /*media query*/
+@media (max-width: 576px)  {
+    
+}
+
+
+@media (max-width: 768px) {
+}
+
+
+
+@media (min-width: 992px) {
+}
+
